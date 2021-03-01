@@ -1,0 +1,20 @@
+#include <iostream>
+using namespace std;
+int firstNumber; 
+
+int main() 
+{
+    cout << "Введите число: ";
+    cin >> firstNumber;
+    cout << "Вы ввели: " << firstNumber << endl;
+    
+    int secondNumber = 0; 
+    while (firstNumber != 0) 
+        { 
+        if ((firstNumber % 10) % 2 == 0) secondNumber++; 
+        firstNumber = firstNumber / 10; 
+        
+        } 
+    cout << "Количество четных чисел: " << ("%d", secondNumber) << endl;
+    return 0;
+}
